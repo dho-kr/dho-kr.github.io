@@ -2,6 +2,10 @@
   --margin: 16px;
 }
 
+@function margin($multiple: 1) {
+  @return calc(var(--margin) * #{$multiple})
+}
+
 body {
 
 }

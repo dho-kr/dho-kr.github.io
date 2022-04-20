@@ -5,4 +5,33 @@ permalink: /rowing/
 ---
 <div>{{ content }}</div>
 
-<p>노 젓기 테스트</p>
+<div>
+  <form id="rowing-form">
+    <p>
+      <label for="next-level">연셩여부</label>
+      <select id="next-level">
+        <option value="0">비연성</option>
+        <option value="1">연성</option>
+      </select>
+    </p>
+    <p>
+      <label for="current-level">현재 랭크</label>
+      <input type="text" id="current-level">
+    </p>
+    <p>
+      <label for="proficiency">숙련도</label>
+      <input type="text" id="proficiency">
+    </p>
+    <p>
+      <label for="bonus">보너스</label>
+      <input type="text" id="bonus">
+    </p>
+    <p>
+      <label for="time">하루 노젓는 시간은?</label>
+      <input type="text" id="time">
+    </p>
+    <p>
+      <button type="submit">입력</button>
+    </p>
+  </form>
+</div>
