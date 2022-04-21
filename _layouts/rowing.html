@@ -5,33 +5,61 @@ permalink: /rowing/
 ---
 <div>{{ content }}</div>
 
+<hr>
+
 <div>
   <form id="rowing-form">
     <p>
-      <label for="next-level">연셩여부</label>
-      <select id="next-level">
+      <label for="next-rank">연셩여부</label>
+      <select id="next-rank">
         <option value="0">비연성</option>
         <option value="1">연성</option>
       </select>
     </p>
     <p>
-      <label for="current-level">현재 랭크</label>
-      <input type="text" id="current-level">
+      <label for="current-rank">현재 랭크</label>
+      <input type="range" id="current-rank" min="1" max="14">
+      <span id="current-rank-value">1</span>
     </p>
     <p>
       <label for="proficiency">숙련도</label>
-      <input type="text" id="proficiency">
+      <input type="number" id="proficiency" min="0">
     </p>
     <p>
       <label for="bonus">보너스</label>
-      <input type="text" id="bonus">
+      <input type="number" id="bonus">%
     </p>
+<!--    <p>-->
+<!--      <label for="time">하루 노젓는 시간은?</label>-->
+<!--      <input type="number" id="time">-->
+<!--    </p>-->
     <p>
-      <label for="time">하루 노젓는 시간은?</label>
-      <input type="text" id="time">
-    </p>
-    <p>
+      <button type="button" id="remove-storage">데이터 지우기</button>
       <button type="submit">입력</button>
     </p>
   </form>
+
+  <hr>
+
+  <div id="result" class="table"></div>
+
+<!--  <div id="disqus_thread"></div>-->
+<!--  <script>-->
+<!--    /**-->
+<!--     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.-->
+<!--     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */-->
+<!--    /*-->
+<!--    var disqus_config = function () {-->
+<!--    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable-->
+<!--    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable-->
+<!--    };-->
+<!--    */-->
+<!--    (function() { // DON'T EDIT BELOW THIS LINE-->
+<!--      var d = document, s = d.createElement('script');-->
+<!--      s.src = 'https://https-dho-kr-github-io.disqus.com/embed.js';-->
+<!--      s.setAttribute('data-timestamp', +new Date());-->
+<!--      (d.head || d.body).appendChild(s);-->
+<!--    })();-->
+<!--  </script>-->
+<!--  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
 </div>
